@@ -1,0 +1,19 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:unified="sap.ui.unified">
+<Dialog id="idpopup" title="Choose Excel file for Upload" contentWidth= "450px">
+<content>
+<unified:FileUploader id="uploader"  class="uploaderCls sapUiSmallMarginBegin"/>
+</content>
+
+
+
+<buttons>        
+            <Button id="_IDGenButton1" text="Template" press="onDownloadTemplatePress" icon="sap-icon://download-from-cloud" type="Emphasized"/>
+            <Button id="_IDGenButton2" text="Upload" press="onCloseDialog" icon="sap-icon://upload-to-cloud" type="Emphasized"/>
+            <Button id="_IDGenButton3" press="onCloseDialog" text="Cancel" icon="sap-icon://cancel"/>
+
+            <!-- <Button press="onCloseDialog" text="cancel"></Button> -->
+        </buttons>
+
+
+</Dialog>
+</core:FragmentDefinition>
